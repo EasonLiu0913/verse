@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VERSE</title>
+
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <p class="header-description">屬於我們時代的文化媒體</p>
+            <div class="header-main-area">
+                <div class="header-logo">
+                    <svg width="212" height="59" viewBox="0 0 212 59" fill="none" xmlns="http://www.w3.org/2000/svg"
+                        class="header__logo">
+                        <path
+                            d="M20.5918 52.1814C20.3059 52.1814 20.0914 52.0384 20.0199 51.8239L6.79245 17.1466C4.79047 11.9987 4.21847 11.4982 1.78749 10.6402L0 9.99667V9.13867H17.6604V9.99667L14.9434 10.7117C12.3694 11.4267 11.8689 12.1416 13.6564 17.0751L21.5928 39.0255C22.3078 40.9559 23.0943 43.4584 23.2373 44.4594H23.3803C23.5948 43.6014 24.3098 41.7424 25.3823 39.0255L32.8898 20.1496C35.9642 12.5706 35.3922 11.5697 32.6038 10.7832L30.0298 10.0682V9.13867H45.2592V9.99667L43.5432 10.6402C41.1122 11.4982 40.5402 12.2131 37.9662 18.5051L24.0238 51.7524C23.9523 51.9669 23.7378 52.1099 23.4518 52.1099H20.5918V52.1814Z"
+                            fill="black"></path>
+                        <path
+                            d="M52.1943 52.1099V51.2519L54.9113 50.4654C57.4852 49.7504 57.8427 49.3929 57.8427 43.8874V17.3611C57.8427 11.8557 57.4852 11.4982 54.9113 10.7832L52.1943 9.99667V9.13867H80.9371C81.2231 9.13867 81.5091 9.42467 81.5091 9.71067V17.5756H80.9371C80.6511 17.5756 80.4366 17.3611 80.3651 17.1466L79.7216 14.7156C79.0781 12.3561 77.7196 11.7127 70.7841 11.7127H64.7067C64.4207 11.7127 64.1347 11.9987 64.1347 12.2846V27.4425C64.1347 27.8 64.4207 28.0145 64.7067 28.0145H70.7126C76.4326 28.0145 77.2906 27.8 77.9341 25.5836L78.5061 23.6531C78.5776 23.3671 78.7921 23.2241 79.0781 23.2241H79.5786V35.665H79.0781C78.7921 35.665 78.5776 35.522 78.5061 35.236L77.8626 33.0195C77.2191 30.803 76.4326 30.5885 70.7126 30.5885H64.7067C64.4207 30.5885 64.1347 30.8745 64.1347 31.1605V42.8149C64.1347 48.8209 63.7057 49.3929 67.5667 49.3929H72.3571C78.7206 49.3929 80.5796 48.3919 81.7951 45.7464L82.9391 43.2439C83.0821 42.9579 83.3681 42.8149 83.654 42.8864C84.0115 42.9579 84.1545 43.3154 84.083 43.6014L82.4386 51.4664C82.3671 51.7524 82.1526 51.9669 81.8666 51.9669L52.1943 52.1099Z"
+                            fill="black"></path>
+                        <path
+                            d="M145.716 40.6694C146.145 40.5264 146.502 41.1699 146.502 41.1699L147.646 44.1014C148.79 46.8184 151.721 49.2494 157.012 49.2494C161.874 49.2494 166.379 46.6039 166.379 41.1699C166.379 36.8799 162.875 34.449 159.515 32.876L155.439 30.9455C150.935 28.8005 146.645 25.44 146.645 19.8631C146.645 12.5701 153.151 8.20865 160.015 8.20865C160.873 8.20865 162.732 8.28015 164.734 8.63764C167.308 9.13814 168.238 9.35264 168.524 8.42315L168.738 7.77965C168.738 7.63665 168.881 7.49365 169.096 7.49365H169.811V18.5046C169.811 18.8621 169.525 19.1481 169.167 19.1481C168.881 19.1481 168.667 18.9336 168.595 18.7191L167.88 15.8591C167.308 13.4996 164.949 10.9256 159.586 10.9256C155.511 10.9256 151.721 13.4281 151.721 17.7896C151.721 21.4361 155.225 23.724 158.8 25.44L162.804 27.299C167.308 29.3725 171.813 32.6615 171.813 38.6674C171.813 47.6049 164.234 52.1093 156.512 52.1093C153.437 52.1093 149.576 51.3228 146.86 50.1073C146.645 50.0358 146.574 49.8214 146.502 49.6784L145.144 41.5274L145.072 40.9554C145.072 40.9554 145.072 40.9554 145.716 40.6694Z"
+                            fill="black"></path>
+                        <path
+                            d="M149.362 56.5422C149.362 56.8282 149.147 57.1142 148.861 57.1857C138.208 58.4727 124.981 52.8957 115.829 39.5253L109.751 30.8024C109.465 30.3734 109.751 29.8014 110.252 29.8014H110.681C115.972 29.8014 121.12 27.7279 121.12 20.7925C121.12 13.428 116.544 11.2115 110.466 11.2115C109.894 11.2115 108.965 11.283 108.178 11.3545C107.892 11.3545 107.606 11.6405 107.606 11.998V43.9583C107.606 49.4638 107.964 49.8213 110.538 50.5363L113.255 51.3228V52.1807H95.5943V51.3228L98.3113 50.5363C100.885 49.8213 101.243 49.4638 101.243 43.9583V17.5035C101.243 11.998 100.742 11.3545 98.2398 10.711L95.5943 10.282V9.42406C98.6688 9.28106 105.104 8.99506 112.754 8.99506C119.976 8.78056 127.984 10.7825 127.984 19.6485C127.984 26.2264 121.978 30.1589 118.26 31.5174C117.902 31.6604 117.759 32.0894 117.974 32.4469C119.332 34.7349 120.905 37.8808 123.837 41.5988C123.837 41.5988 134.49 55.3267 148.718 55.6127C149.076 55.6127 149.29 55.8987 149.29 56.2562L149.362 56.5422Z"
+                            fill="black"></path>
+                        <path
+                            d="M180.036 52.1092V51.2512L182.753 50.4647C185.327 49.7497 185.684 49.3922 185.684 43.8867V17.3604C185.684 11.855 185.398 11.283 182.824 10.6395L180.036 10.0675V9.20947H208.779C209.065 9.20947 209.351 9.49547 209.351 9.78147V17.6464H208.779C208.493 17.6464 208.278 17.4319 208.207 17.2174L207.563 14.7864C206.92 12.4269 205.561 11.7835 198.626 11.7835H192.548C192.262 11.7835 191.976 12.0695 191.976 12.3554V27.5133C191.976 27.8708 192.262 28.0853 192.548 28.0853H198.554C204.274 28.0853 205.132 27.8708 205.776 25.6544L206.348 23.7239C206.419 23.4379 206.634 23.2949 206.92 23.2949H207.42V35.7358H206.92C206.634 35.7358 206.419 35.5928 206.348 35.3068L205.704 33.0903C205.061 30.8738 204.274 30.6593 198.554 30.6593H192.548C192.262 30.6593 191.976 30.9453 191.976 31.2313V42.8857C191.976 48.8917 191.547 49.4637 195.408 49.4637H200.199C206.562 49.4637 208.421 48.4627 209.637 45.8172L210.781 43.3147C210.924 43.0287 211.21 42.8857 211.496 42.9572C211.853 43.0287 211.996 43.3862 211.925 43.6722L210.28 51.5372C210.209 51.8232 209.994 52.0377 209.708 52.0377L180.036 52.1092Z"
+                            fill="black"></path>
+                    </svg>
+                </div>
+                <div class="header-info">
+                    <div class="header-info-sub-title">
+                        <p>Issue 09</p>
+                        <p>說故事的未來式 »</p>
+                    </div>
+                    <div class="header-info-date">
+                        <span>Feb.</span><span>18</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav>
+            <div class="container">
+                <div class="d-flex justify-content-between">
+                    <div class="nav-category">
+                        <ul>
+                            <li>
+                                <a href="#">專文</a>
+                            </li>
+                            <li>
+                                <a href="#">專欄</a>
+                            </li>
+                            <li>
+                                <a href="#">影像</a>
+                            </li>
+                            <li>
+                                <a href="#">雜誌</a>
+                            </li>
+                            <li>
+                                <a href="#">商鋪</a>
+                            </li>
+                            <li>
+                                <a href="#">資訊</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="nav-system">
+                        <ul>
+                            <li>
+                                <a href="#">電子報</a>
+                            </li>
+                            <li>
+                                <a href="#">搜尋</a>
+                            </li>
+                            <li>
+                                <a href="#">登入</a>
+                            </li>
+                            <li>
+                                <a href="#">購物袋</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+
+    <main>
+        <div class="container">
+            <div class="setting">
+                <p>閱讀設定</p>
+            </div>
+            <div class="main-article">
+                <div class="page__topList">
+                    <p class="page__description">
+                        <span class="category">
+                            <a href="https://www.verse.com.tw/articles/culture/">藝文</a>． <a
+                                href="https://www.verse.com.tw/articles/new-ideas/">觀念</a> </span>
+                    </p>
+                    <h3 class="page__title"><a
+                            href="https://www.verse.com.tw/article/start-your-own-creation">作家的創作之路如何開始？</a></h3>
+                    <div class="page__photoContainer"><a
+                            href="https://www.verse.com.tw/article/start-your-own-creation"><img
+                                src="https://www.verse.com.tw/storage/temp/public/e5e/be1/869/thumb_1822_1800_1200_0_0_crop__1800.jpg"
+                                alt="作家的創作之路如何開始？"
+                                srcset="https://www.verse.com.tw/storage/temp/public/e5e/be1/869/thumb_1822_1800_1200_0_0_crop__1800.jpg 1800w, https://www.verse.com.tw/storage/temp/public/e5e/be1/869/thumb_1822_1800_1200_0_0_crop__768.jpg 768w, https://www.verse.com.tw/storage/temp/public/e5e/be1/869/thumb_1822_1800_1200_0_0_crop__1300.jpg 1300w"
+                                sizes="(max-width: 1800px) 100vw, 1800px"></a></div>
+                    <p class="page__text"><a
+                            href="https://www.verse.com.tw/article/start-your-own-creation">在這個社群時代，每個人都可以有一個，甚至多個發聲工具。發聲不難，但能不能讓它成為「創作」，決定於你為這則分享出去的訊號，加入了多少「靈魂」？
+                            <small style="font-size: 1.2rem;">›</small></a></p>
+                </div>
+            </div>
+
+            <div class="ad">
+                <div class="ad__img"><a target="_self"
+                        href="/article/the-future-of-storytelling-foreword?utm_source=verse&amp;utm_medium=hp-banner-image&amp;utm_content=202112-verse-009"
+                        data-t-cat="AD" data-t-act="Click" data-t-label="202112-verse-009"><img
+                            src="https://www.verse.com.tw/storage/temp/public/b7d/36b/3c4/009-740x400__3084.jpg"
+                            alt="【VERSE VOL. 09】說故事的未來式"
+                            srcset="https://www.verse.com.tw/storage/temp/public/b7d/36b/3c4/009-740x400__3084.jpg 3084w, https://www.verse.com.tw/storage/temp/public/b7d/36b/3c4/009-740x400__768.jpg 768w, https://www.verse.com.tw/storage/temp/public/b7d/36b/3c4/009-740x400__1300.jpg 1300w"
+                            sizes="(max-width: 3084px) 100vw, 3084px"></a></div>
+                <div class="ad__text">
+                    <p><a target="_self"
+                            href="/article/the-future-of-storytelling-foreword?utm_source=verse&amp;utm_medium=hp-banner-text&amp;utm_content=202112-verse-009"
+                            data-t-cat="AD" data-t-act="Click" data-t-label="202112-verse-009">【VERSE VOL.
+                            09】<br>說故事的未來式</a></p>
+                </div>
+            </div>
+
+            <section class="page">
+                <div class="page__wrapper">
+                    <p class="page__description page__description--center"><a
+                            href="https://www.verse.com.tw/features/botanical-gardens">Botanical Gardens</a></p>
+                    <h3 class="page__title page__title--center"><a
+                            href="https://www.verse.com.tw/features/botanical-gardens">這座島嶼是座植物博物館 <small
+                                style="font-size: 1.2rem;">›</small></a></h3>
+                    <p class="page__subTitle"></p>
+                    <div class="page__multiple">
+                        <div class="page__area">
+                            <div class="page__article">
+                                <div class="page__photoContainer">
+                                    <a href="https://www.verse.com.tw/article/fushan-botanical-garden"><img
+                                            src="https://www.verse.com.tw/storage/temp/public/6fb/75e/3f1/thumb_1783_600_400_0_0_crop__600.jpg"
+                                            alt="福山植物園：隱藏在山林祕境的生態方舟"
+                                            srcset="https://www.verse.com.tw/storage/temp/public/6fb/75e/3f1/thumb_1783_600_400_0_0_crop__600.jpg 600w"
+                                            sizes=""></a>
+                                </div>
+                                <div class="page__narrative">
+                                    <p class="page__description">
+                                        <span class="category">
+                                            <a href="/articles/local/">地方</a>． <a href="/articles/cover-story/">重磅</a>
+                                        </span>
+                                    </p>
+                                    <h4 class="page__articleTitle"><a
+                                            href="https://www.verse.com.tw/article/fushan-botanical-garden">福山植物園：隱藏在山林祕境的生態方舟</a>
+                                    </h4>
+                                    <p class="page__articleText"><a
+                                            href="https://www.verse.com.tw/article/fushan-botanical-garden">宜蘭福山植物園是台灣最大的植物園，體現了一座森林的完整生態系，同是也是一座生態方舟，是台灣稀有植物移地保種的重要基地。</a>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="page__article">
+                                <div class="page__photoContainer">
+                                    <a href="https://www.verse.com.tw/article/taipei-botanical-gardetn"><img
+                                            src="https://www.verse.com.tw/storage/temp/public/724/1e1/6db/thumb_1746_600_400_0_0_crop__600.jpg"
+                                            alt="台北植物園：景觀與文化疊加的城市森林"
+                                            srcset="https://www.verse.com.tw/storage/temp/public/724/1e1/6db/thumb_1746_600_400_0_0_crop__600.jpg 600w"
+                                            sizes=""></a>
+                                </div>
+                                <div class="page__narrative">
+                                    <p class="page__description">
+                                        <span class="category">
+                                            <a href="/articles/local/">地方</a>． <a href="/articles/cover-story/">重磅</a>
+                                        </span>
+                                    </p>
+                                    <h4 class="page__articleTitle"><a
+                                            href="https://www.verse.com.tw/article/taipei-botanical-gardetn">台北植物園：景觀與文化疊加的城市森林</a>
+                                    </h4>
+                                    <p class="page__articleText"><a
+                                            href="https://www.verse.com.tw/article/taipei-botanical-gardetn">身為歷史最悠久、位處都市核心的台北植物園，在更迭的政權下、研究與推廣的使命中，打造以植物為主角的空間，讓市民與自然、人與環境得以長久共存，</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="page__area">
+                            <div class="page__article page__article--column">
+                                <div class="page__photoContainer">
+                                    <a href="https://www.verse.com.tw/article/chiayi-botanical-garden"><img
+                                            src="https://www.verse.com.tw/storage/temp/public/b6e/3a7/036/thumb_1757_600_400_0_0_crop__600.jpg"
+                                            alt="嘉義樹木園：從帝國熱帶林業經營到島嶼原生植物保種"
+                                            srcset="https://www.verse.com.tw/storage/temp/public/b6e/3a7/036/thumb_1757_600_400_0_0_crop__600.jpg 600w"
+                                            sizes="(max-width: 600px) 100vw, 600px"></a>
+                                </div>
+                                <div class="page__narrative">
+                                    <p class="page__description">
+                                        <span class="category">
+                                            <a href="/articles/local/">地方</a>． <a href="/articles/cover-story/">重磅</a>
+                                        </span>
+                                    </p>
+                                    <h4 class="page__articleTitle"><a
+                                            href="https://www.verse.com.tw/article/chiayi-botanical-garden">嘉義樹木園：從帝國熱帶林業經營到島嶼原生植物保種</a>
+                                    </h4>
+                                    <p class="page__articleText"><a
+                                            href="https://www.verse.com.tw/article/chiayi-botanical-garden">「嘉義樹木園」前身是日治時期的橡膠樹與熱帶經濟樹種的殖育試驗地，是日本帝國發展熱帶林業、經營帝國南進戰略的重要基地，在戰後轉型為植物園。</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="page video">
+                <div class="page__wrapper">
+                    <h3 class="page__title">影像
+                        <p class="page__titleEnglish">Pictures &amp; Videos</p>
+                    </h3>
+                    <div class="templateA">
+                        <div class="templateA__list ">
+                            <div class="templateA__photo">
+                                <a href="https://www.verse.com.tw/article/cnflower">
+                                    <img src="https://www.verse.com.tw/storage/temp/public/8a2/2b7/88a/thumb_1447_600_400_0_0_crop__600.jpeg"
+                                        alt="CNFlower創辦人凌宗湧：在億萬年火山口下打造一座實驗花園"
+                                        srcset="https://www.verse.com.tw/storage/temp/public/8a2/2b7/88a/thumb_1447_600_400_0_0_crop__600.jpeg 600w"
+                                        sizes="(max-width: 600px) 100vw, 600px">
+                                </a>
+                            </div>
+                            <p class="templateA__subText">
+                                <span class="category">
+                                    <a href="https://www.verse.com.tw/articles/figure/">人物</a>． <a
+                                        href="https://www.verse.com.tw/articles/ideal-life/">生活</a> </span>
+
+                            </p>
+                            <h3 class="templateA__listTitle"><a
+                                    href="https://www.verse.com.tw/article/cnflower">CNFlower創辦人凌宗湧：在億萬年火山口下打造一座實驗花園</a>
+                            </h3>
+                            <p class="templateA__text"><a
+                                    href="https://www.verse.com.tw/article/cnflower">CNFlower創辦人凌宗湧，曾出版《花藝大師到你家》、《每日美日》等書，其專業不只在花藝，更致力於探索植物、自然環境與生活的關係。</a>
+                            </p>
+                        </div>
+                        <div class="templateA__list ">
+                            <div class="templateA__photo">
+                                <a href="https://www.verse.com.tw/article/home-johnny-chiu">
+                                    <img src="https://www.verse.com.tw/storage/temp/public/ae1/ab6/6f8/thumb_750_600_400_0_0_crop__600.jpg"
+                                        alt="建築空間設計師邱柏文的家：有機生長的溫州街日式老宅"
+                                        srcset="https://www.verse.com.tw/storage/temp/public/ae1/ab6/6f8/thumb_750_600_400_0_0_crop__600.jpg 600w"
+                                        sizes="(max-width: 600px) 100vw, 600px">
+                                </a>
+                            </div>
+                            <p class="templateA__subText">
+                                <span class="category">
+                                    <a href="https://www.verse.com.tw/articles/figure/">人物</a>． <a
+                                        href="https://www.verse.com.tw/articles/ideal-life/">生活</a> </span>
+
+                            </p>
+                            <h3 class="templateA__listTitle"><a
+                                    href="https://www.verse.com.tw/article/home-johnny-chiu">建築空間設計師邱柏文的家：有機生長的溫州街日式老宅</a>
+                            </h3>
+                            <p class="templateA__text"><a
+                                    href="https://www.verse.com.tw/article/home-johnny-chiu">設計師邱柏文在
+                                    台北溫州街上，打開屋齡90年的日式宿舍空間尺度，不僅延續老屋生命，也讓生活與空間展開對話。</a></p>
+                        </div>
+                        <div class="templateA__list ">
+                            <div class="templateA__photo">
+                                <a href="https://www.verse.com.tw/article/home-wang-chuen-tz">
+                                    <img src="https://www.verse.com.tw/storage/temp/public/9ac/dd8/30f/thumb_601_600_400_0_0_crop__600.jpg"
+                                        alt="插畫創作者王春子的家：用自己的步調將日子過得寬裕"
+                                        srcset="https://www.verse.com.tw/storage/temp/public/9ac/dd8/30f/thumb_601_600_400_0_0_crop__600.jpg 600w"
+                                        sizes="(max-width: 600px) 100vw, 600px">
+                                </a>
+                            </div>
+                            <p class="templateA__subText">
+                                <span class="category">
+                                    <a href="https://www.verse.com.tw/articles/figure/">人物</a>． <a
+                                        href="https://www.verse.com.tw/articles/ideal-life/">生活</a> </span>
+
+                            </p>
+                            <h3 class="templateA__listTitle"><a
+                                    href="https://www.verse.com.tw/article/home-wang-chuen-tz">插畫創作者王春子的家：用自己的步調將日子過得寬裕</a>
+                            </h3>
+                            <p class="templateA__text"><a
+                                    href="https://www.verse.com.tw/article/home-wang-chuen-tz">八里山坡上的鐵皮屋頂舊工廠將王春子的家與工作室圈在一起，前院是先生的藝術創作場域，再往裡面則是一家三口的生活重心。</a>
+                            </p>
+                        </div>
+                        <div class="templateA__list ">
+                            <div class="templateA__photo">
+                                <a href="https://www.verse.com.tw/article/home-tainanoldhouseInn">
+                                    <img src="https://www.verse.com.tw/storage/temp/public/20a/b11/0b5/thumb_642_600_400_0_0_crop__600.jpg"
+                                        alt="「台南謝宅」謝小五的家：老城新區中的南方生活新風範"
+                                        srcset="https://www.verse.com.tw/storage/temp/public/20a/b11/0b5/thumb_642_600_400_0_0_crop__600.jpg 600w"
+                                        sizes="(max-width: 600px) 100vw, 600px">
+                                </a>
+                            </div>
+                            <p class="templateA__subText">
+                                <span class="category">
+                                    <a href="https://www.verse.com.tw/articles/figure/">人物</a>． <a
+                                        href="https://www.verse.com.tw/articles/ideal-life/">生活</a> </span>
+
+                            </p>
+                            <h3 class="templateA__listTitle"><a
+                                    href="https://www.verse.com.tw/article/home-tainanoldhouseInn">「台南謝宅」謝小五的家：老城新區中的南方生活新風範</a>
+                            </h3>
+                            <p class="templateA__text"><a
+                                    href="https://www.verse.com.tw/article/home-tainanoldhouseInn">「謝宅」主人謝小五是台灣老屋活化風潮的先驅者，然而他的私宅位於安平區的現代化公寓大樓中，風格與謝宅歷久彌新的韻味截然不同。</a>
+                            </p>
+                        </div>
+                        <div class="templateA__list ">
+                            <div class="templateA__photo">
+                                <a href="https://www.verse.com.tw/article/gavin-yin-home-style">
+                                    <img src="https://www.verse.com.tw/storage/temp/public/77f/6ff/f5a/thumb_397_600_400_0_0_crop__600.jpg"
+                                        alt="導演尹國賢的家：在平凡中創造不凡想像"
+                                        srcset="https://www.verse.com.tw/storage/temp/public/77f/6ff/f5a/thumb_397_600_400_0_0_crop__600.jpg 600w"
+                                        sizes="(max-width: 600px) 100vw, 600px">
+                                </a>
+                            </div>
+                            <p class="templateA__subText">
+                                <span class="category">
+                                    <a href="https://www.verse.com.tw/articles/figure/">人物</a>． <a
+                                        href="https://www.verse.com.tw/articles/ideal-life/">生活</a> </span>
+
+                            </p>
+                            <h3 class="templateA__listTitle"><a
+                                    href="https://www.verse.com.tw/article/gavin-yin-home-style">導演尹國賢的家：在平凡中創造不凡想像</a>
+                            </h3>
+                            <p class="templateA__text"><a
+                                    href="https://www.verse.com.tw/article/gavin-yin-home-style">「家對我來說像情人，會依賴它、花很多時間與它相處，而它也能包容我的各種面向。」尹國賢導演如是說。</a>
+                            </p>
+                        </div>
+                        <div class="templateA__list ">
+                            <div class="templateA__photo">
+                                <a href="https://www.verse.com.tw/article/gq-blues-to-home-style">
+                                    <img src="https://www.verse.com.tw/storage/temp/public/f16/49c/4a8/thumb_396_600_400_0_0_crop__600.jpg"
+                                        alt="《GQ》總編輯杜祖業的家：從生活中發現處處講究的編輯學"
+                                        srcset="https://www.verse.com.tw/storage/temp/public/f16/49c/4a8/thumb_396_600_400_0_0_crop__600.jpg 600w"
+                                        sizes="(max-width: 600px) 100vw, 600px">
+                                </a>
+                            </div>
+                            <p class="templateA__subText">
+                                <span class="category">
+                                    <a href="https://www.verse.com.tw/articles/figure/">人物</a>． <a
+                                        href="https://www.verse.com.tw/articles/ideal-life/">生活</a> </span>
+
+                            </p>
+                            <h3 class="templateA__listTitle"><a
+                                    href="https://www.verse.com.tw/article/gq-blues-to-home-style">《GQ》總編輯杜祖業的家：從生活中發現處處講究的編輯學</a>
+                            </h3>
+                            <p class="templateA__text"><a
+                                    href="https://www.verse.com.tw/article/gq-blues-to-home-style">《GQ》總編輯杜祖業，工作上他是嚴厲的總編輯，頂著做工精細的眼鏡犀利看稿，私下則把個人品味毫不保留地注入家裡頭。</a>
+                            </p>
+                        </div>
+
+                    </div>
+                    <div class="page__more"><a href="/pictures/">更多影像</a></div>
+                </div>
+            </section>
+
+            <section class="page">
+                <div class="page__wrapper">
+                    <h3 class="page__title">專欄
+                        <p class="page__titleEnglish">Columns</p>
+                    </h3>
+                    <div class="templateA">
+                        <div class="templateA__list ">
+                            <div class="templateA__photo">
+                                <a href="https://www.verse.com.tw/article/hitomi-xu-the-making-of-an-oridinary-woman">
+                                    <img src="https://www.verse.com.tw/storage/temp/public/208/13a/8ee/thumb_1869_600_400_0_0_crop__600.jpg"
+                                        alt="藥與蜜的生活大補丸——江鵝《俗女養成記》"
+                                        srcset="https://www.verse.com.tw/storage/temp/public/208/13a/8ee/thumb_1869_600_400_0_0_crop__600.jpg 600w"
+                                        sizes="(max-width: 600px) 100vw, 600px">
+                                </a>
+                            </div>
+                            <p class="templateA__subText">
+                                <span class="category">
+                                    <a href="https://www.verse.com.tw/articles/literature/">文學</a>． <a
+                                        href="https://www.verse.com.tw/articles/reading/">閱讀</a> </span>
+
+                            </p>
+                            <h3 class="templateA__listTitle"><a
+                                    href="https://www.verse.com.tw/article/hitomi-xu-the-making-of-an-oridinary-woman">藥與蜜的生活大補丸——江鵝《俗女養成記》</a>
+                            </h3>
+                            <p class="templateA__text"><a
+                                    href="https://www.verse.com.tw/article/hitomi-xu-the-making-of-an-oridinary-woman">「所謂的社會標準，讓絕大多數的女人必須疲於奔命才能勉強及格，倒是明顯叫人發現標準並不合理。」闔起書本走入生活，發現此處的「社會標準
+                                    / 女人」亦可代換「文學 / 散文」。</a></p>
+                        </div>
+                        <div class="templateA__list ">
+                            <div class="templateA__photo">
+                                <a href="https://www.verse.com.tw/article/architalks-02">
+                                    <img src="https://www.verse.com.tw/storage/temp/public/c1a/297/201/thumb_1482_600_400_0_0_crop__600.jpg"
+                                        alt="龔書章 ✕ 曾志偉：少少、了了、曖曖內含光"
+                                        srcset="https://www.verse.com.tw/storage/temp/public/c1a/297/201/thumb_1482_600_400_0_0_crop__600.jpg 600w"
+                                        sizes="(max-width: 600px) 100vw, 600px">
+                                </a>
+                            </div>
+                            <p class="templateA__subText">
+                                <span class="category">
+                                    <a href="https://www.verse.com.tw/articles/architecture/">建築</a> </span>
+
+                            </p>
+                            <h3 class="templateA__listTitle"><a
+                                    href="https://www.verse.com.tw/article/architalks-02">龔書章 ✕ 曾志偉：少少、了了、曖曖內含光</a></h3>
+                            <p class="templateA__text"><a
+                                    href="https://www.verse.com.tw/article/architalks-02">龔書章與今年代表台灣參加第17屆威尼斯建築雙年展的「自然洋行」創辦人曾志偉對談，從建築人新觀審視自然與建築間的巧妙關係。</a>
+                            </p>
+                        </div>
+                        <div class="templateA__list ">
+                            <div class="templateA__photo">
+                                <a href="https://www.verse.com.tw/article/architalks-01">
+                                    <img src="https://www.verse.com.tw/storage/temp/public/2a9/a58/72f/thumb_1131_600_400_0_0_crop__600.png"
+                                        alt="龔書章 ✕ 張清華：疫情下的醫療健康和移動庇護"
+                                        srcset="https://www.verse.com.tw/storage/temp/public/2a9/a58/72f/thumb_1131_600_400_0_0_crop__600.png 600w"
+                                        sizes="(max-width: 600px) 100vw, 600px">
+                                </a>
+                            </div>
+                            <p class="templateA__subText">
+                                <span class="category">
+                                    <a href="https://www.verse.com.tw/articles/architecture/">建築</a> </span>
+
+                            </p>
+                            <h3 class="templateA__listTitle"><a
+                                    href="https://www.verse.com.tw/article/architalks-01">龔書章 ✕ 張清華：疫情下的醫療健康和移動庇護</a>
+                            </h3>
+                            <p class="templateA__text"><a
+                                    href="https://www.verse.com.tw/article/architalks-01">龔書章藉由對張清華建築師的共創實踐「QurE原型屋」，引發你我在面對疫情尚未平息當下的重要反思，也促進醫療救助的創新與研發。</a>
+                            </p>
+                        </div>
+                        <div class="templateA__list ">
+                            <div class="templateA__photo">
+                                <a href="https://www.verse.com.tw/article/shu-wen-tang-1">
+                                    <img src="https://www.verse.com.tw/storage/temp/public/c02/169/ca1/thumb_1060_600_400_0_0_crop__600.png"
+                                        alt="湯舒雯專欄：第一代——關於各種「第一代」人們直面的挑戰"
+                                        srcset="https://www.verse.com.tw/storage/temp/public/c02/169/ca1/thumb_1060_600_400_0_0_crop__600.png 600w"
+                                        sizes="(max-width: 600px) 100vw, 600px">
+                                </a>
+                            </div>
+                            <p class="templateA__subText">
+                                <span class="category">
+                                    <a href="https://www.verse.com.tw/articles/new-ideas/">觀念</a> </span>
+
+                            </p>
+                            <h3 class="templateA__listTitle"><a
+                                    href="https://www.verse.com.tw/article/shu-wen-tang-1">湯舒雯專欄：第一代——關於各種「第一代」人們直面的挑戰</a>
+                            </h3>
+                            <p class="templateA__text"><a
+                                    href="https://www.verse.com.tw/article/shu-wen-tang-1">台灣自90年代教改廣設大學後，成長了空前龐大的「第一代大學生」，我和許多人一樣，符合「第一代」的定義，卻需要學習這個概念。</a>
+                            </p>
+                        </div>
+                        <div class="templateA__list ">
+                            <div class="templateA__photo">
+                                <a href="https://www.verse.com.tw/article/ayo-curry-fried-seafood">
+                                    <img src="https://www.verse.com.tw/storage/temp/public/d7f/885/2a3/thumb_745_600_400_0_0_crop__600.jpeg"
+                                        alt="自製咖哩風味炸海鮮——不務正業男子Ayo的家常食譜"
+                                        srcset="https://www.verse.com.tw/storage/temp/public/d7f/885/2a3/thumb_745_600_400_0_0_crop__600.jpeg 600w"
+                                        sizes="(max-width: 600px) 100vw, 600px">
+                                </a>
+                            </div>
+                            <p class="templateA__subText">
+                                <span class="category">
+                                    <a href="https://www.verse.com.tw/articles/eating/">飲食</a> </span>
+
+                            </p>
+                            <h3 class="templateA__listTitle"><a
+                                    href="https://www.verse.com.tw/article/ayo-curry-fried-seafood">自製咖哩風味炸海鮮——不務正業男子Ayo的家常食譜</a>
+                            </h3>
+                            <p class="templateA__text"><a
+                                    href="https://www.verse.com.tw/article/ayo-curry-fried-seafood">常被朋友問到代表基隆的滋味是什麼，我的回答總是會有「咖哩」。發想這次的料理，我想把這個日常風味融合進來。</a>
+                            </p>
+                        </div>
+                        <div class="templateA__list ">
+                            <div class="templateA__photo">
+                                <a href="https://www.verse.com.tw/article/ayo-rice-ball">
+                                    <img src="https://www.verse.com.tw/storage/temp/public/2ca/1e5/43b/thumb_776_600_400_0_0_crop__600.jpeg"
+                                        alt="自己動手做美味飯糰便當——不務正業男子Ayo的家常食譜"
+                                        srcset="https://www.verse.com.tw/storage/temp/public/2ca/1e5/43b/thumb_776_600_400_0_0_crop__600.jpeg 600w"
+                                        sizes="(max-width: 600px) 100vw, 600px">
+                                </a>
+                            </div>
+                            <p class="templateA__subText">
+                                <span class="category">
+                                    <a href="https://www.verse.com.tw/articles/local/">地方</a>． <a
+                                        href="https://www.verse.com.tw/articles/eating/">飲食</a> </span>
+
+                            </p>
+                            <h3 class="templateA__listTitle"><a
+                                    href="https://www.verse.com.tw/article/ayo-rice-ball">自己動手做美味飯糰便當——不務正業男子Ayo的家常食譜</a>
+                            </h3>
+                            <p class="templateA__text"><a
+                                    href="https://www.verse.com.tw/article/ayo-rice-ball">把基隆出產的甜辣醬拌上鮪魚、美乃滋作為內餡，放進調味飯捏緊，就可裝盒出發前往我的家鄉秘境：二沙灣砲台。</a>
+                            </p>
+                        </div>
+
+                    </div>
+                    <div class="page__more"><a href="/columns/">更多專欄</a></div>
+                </div>
+            </section>
+
+
+        </div>
+
+
+    </main>
+
+    <footer class="footer">
+        <div class="footer__container">
+            <div class="footer__top">
+                <div class="footer__list">
+                    <div class="footer__item">
+                        <h3 data-t-cat="Navigation" data-t-act="Footer Navigation" class="footer__itemName">專文
+                            <p>Words &amp; Images</p>
+                        </h3>
+                        <div class="footer__itemSlide">
+                            <a data-t-cat="Navigation" data-t-act="Footer Navigation" href="/articles/cover-story/"
+                                class="footer__itemLink">重磅</a>
+                            <a data-t-cat="Navigation" data-t-act="Footer Navigation" href="/articles/verse-news/"
+                                class="footer__itemLink">新聞</a>
+                            <a data-t-cat="Navigation" data-t-act="Footer Navigation" href="/articles/new-ideas/"
+                                class="footer__itemLink">觀念</a>
+                            <a data-t-cat="Navigation" data-t-act="Footer Navigation" href="/articles/business/"
+                                class="footer__itemLink">商業</a>
+                            <a data-t-cat="Navigation" data-t-act="Footer Navigation" href="/articles/culture/"
+                                class="footer__itemLink">藝文</a>
+                            <a data-t-cat="Navigation" data-t-act="Footer Navigation" href="/articles/ideal-life/"
+                                class="footer__itemLink">生活</a>
+                            <a data-t-cat="Navigation" data-t-act="Footer Navigation" href="/features/"
+                                class="footer__itemLink">專題</a>
+                            <a data-t-cat="Navigation" data-t-act="Footer Navigation" href="/articles/"
+                                class="footer__itemLink">更多文章</a>
+                        </div>
+                    </div>
+                    <div class="footer__item">
+                        <h3 data-t-cat="Navigation" data-t-act="Footer Navigation" class="footer__itemName">專欄
+                            <p>Columns</p>
+                        </h3>
+                        <div class="footer__itemSlide">
+                            <a data-t-cat="Navigation" data-t-act="Footer Navigation"
+                                href="/columns/enno-cheng-object-a/" class="footer__itemLink">鄭宜農</a>
+                            <a data-t-cat="Navigation" data-t-act="Footer Navigation" href="/columns/lotus-chang/"
+                                class="footer__itemLink">張惠菁</a>
+                            <a data-t-cat="Navigation" data-t-act="Footer Navigation" href="/columns/chun-chi-wang/"
+                                class="footer__itemLink">王君琦</a>
+                            <a data-t-cat="Navigation" data-t-act="Footer Navigation" href="/columns/slow-chen-food/"
+                                class="footer__itemLink">陳小曼</a>
+                            <a data-t-cat="Navigation" data-t-act="Footer Navigation"
+                                href="/columns/you-are-what-you-eat-ayo-cheng-cheng/" class="footer__itemLink">Ayo</a>
+                            <a data-t-cat="Navigation" data-t-act="Footer Navigation" href="/columnists/"
+                                class="footer__itemLink">更多專欄作者</a>
+                        </div>
+                    </div>
+                    <div class="footer__item">
+                        <h3 data-t-cat="Navigation" data-t-act="Footer Navigation" class="footer__itemName">影像
+                            <p>Videos &amp; Pictures</p>
+                        </h3>
+                        <div class="footer__itemSlide">
+                            <a data-t-cat="Navigation" data-t-act="Footer Navigation" href="/videos/"
+                                class="footer__itemLink">影音觀點</a>
+                            <a data-t-cat="Navigation" data-t-act="Footer Navigation" href="/pictures/"
+                                class="footer__itemLink">圖輯視界</a>
+                        </div>
+                    </div>
+                    <div class="footer__item">
+                        <h3 data-t-cat="Navigation" data-t-act="Footer Navigation" class="footer__itemName">雜誌
+                            <p>Magazine</p>
+                        </h3>
+                        <div class="footer__itemSlide">
+                            <a data-t-cat="Navigation" data-t-act="Footer Navigation"
+                                href="/shop/subscription/one-year-plan" class="footer__itemLink">一年六期</a>
+                            <a data-t-cat="Navigation" data-t-act="Footer Navigation"
+                                href="/shop/subscription/two-years-plan" class="footer__itemLink">兩年十二期</a>
+                            <a data-t-cat="Navigation" data-t-act="Footer Navigation"
+                                href="https://www.books.com.tw/web/sys_maglist/rmagazine/MAG0013633"
+                                class="footer__itemLink" target="_blank">博客來</a>
+                            <a data-t-cat="Navigation" data-t-act="Footer Navigation"
+                                href="https://www.eslite.com/Search?categories=%5B434%5D&amp;keyword=verse"
+                                class="footer__itemLink" target="_blank">誠品</a>
+                        </div>
+                    </div>
+                    <div class="footer__item">
+                        <h3 data-t-cat="Navigation" data-t-act="Footer Navigation" class="footer__itemName">商鋪
+                            <p>Shop</p>
+                        </h3>
+                        <div class="footer__itemSlide">
+                            <a data-t-cat="Navigation" data-t-act="Footer Navigation" href="/shop/verse-event/"
+                                class="footer__itemLink">VERSE WINTER FESTIVAL 2021</a>
+                            <a data-t-cat="Navigation" data-t-act="Footer Navigation" href="/shop/cool-stuff/"
+                                class="footer__itemLink">VERSE COOL STUFF</a>
+                        </div>
+                    </div>
+                    <div class="footer__item">
+                        <h3 data-t-cat="Navigation" data-t-act="Footer Navigation" class="footer__itemName">資訊
+                            <p>Info</p>
+                        </h3>
+                        <div class="footer__itemSlide">
+                            <a data-t-cat="Navigation" data-t-act="Footer Navigation"
+                                href="https://www.verse.com.tw/about-us" class="footer__itemLink">關於我們</a>
+                            <a data-t-cat="Navigation" data-t-act="Footer Navigation"
+                                href="https://www.verse.com.tw/about-us#contact" class="footer__itemLink">聯絡我們</a>
+                            <a data-t-cat="Navigation" data-t-act="Footer Navigation"
+                                href="https://www.verse.com.tw/news" class="footer__itemLink">最新消息</a>
+                            <a data-t-cat="Navigation" data-t-act="Footer Navigation"
+                                href="https://www.verse.com.tw/verse-express" class="footer__itemLink">訂閱電子報</a>
+                            <a data-t-cat="Navigation" data-t-act="Footer Navigation"
+                                href="https://www.verse.com.tw/privacy" class="footer__itemLink">隱私政策</a>
+                        </div>
+                    </div>
+
+                    <div class="control__top" data-t-cat="Navigation" data-t-act="Right Side Bar"
+                        data-t-label="Back To Top">
+                        <svg width="46" height="46" viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="22.7207" cy="23.0415" r="22.355" fill="#FEFDF0" fill-opacity="0.7"></circle>
+                            <path
+                                d="M15.8807 20.3215L16.2527 22.0855H16.8887L16.8047 19.7455H9.5927L9.4847 22.0855H10.1447L10.5047 20.3215H12.5687C12.5927 21.4735 12.5927 22.6495 12.5927 23.8255V24.4735C12.5927 25.6495 12.5927 26.8015 12.5687 27.9415L11.2127 28.0855V28.5415H15.1727V28.0855L13.8167 27.9415C13.7927 26.7895 13.7927 25.6255 13.7927 24.4735V23.8255C13.7927 22.6495 13.7927 21.4735 13.8167 20.3215H15.8807ZM20.2291 24.1375C20.2291 22.0735 21.0571 20.1175 22.8931 20.1175C24.7171 20.1175 25.5211 22.0735 25.5211 24.1375C25.5211 26.2135 24.7171 28.1695 22.8931 28.1695C21.0571 28.1695 20.2291 26.2135 20.2291 24.1375ZM22.8931 19.5415C20.8291 19.5415 18.8731 21.2575 18.8731 24.1375C18.8731 27.1255 20.8171 28.7335 22.8931 28.7335C24.9571 28.7335 26.8891 27.0295 26.8891 24.1375C26.8891 21.1735 24.9331 19.5415 22.8931 19.5415ZM32.3137 20.2615C33.8857 20.2615 34.5937 21.0175 34.5937 22.3495C34.5937 23.6215 33.9337 24.4975 32.2897 24.4975H31.4497V23.8255C31.4497 22.6255 31.4497 21.4255 31.4737 20.2615H32.3137ZM32.1457 25.0255C34.7977 25.0255 35.8297 23.8135 35.8297 22.3495C35.8297 20.7895 34.7377 19.7455 32.5297 19.7455H29.0017V20.2015L30.2257 20.3335C30.2497 21.4855 30.2497 22.6495 30.2497 23.8255V24.4735C30.2497 25.6495 30.2497 26.8015 30.2257 27.9535L29.0017 28.0855V28.5415H32.7217V28.0855L31.4737 27.9415C31.4497 26.9455 31.4497 25.9975 31.4497 25.0255H32.1457Z"
+                                fill="black"></path>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="https://www.verse.com.tw/themes/verse/assets/images/common/footerLogo.svg" alt=""
+            class="footer__logo">
+        <div class="footer__protection">
+            <div class="footer__container">
+                <div class="footer__bread">
+                    <div class="footer__copyBox">
+                        <div>
+                            <a data-t-cat="Navigation" data-t-act="Footer Navigation" data-t-label="VERSE Facebook粉絲團"
+                                href="https://www.facebook.com/verse.com.tw/" title="VERSE Facebook粉絲團"
+                                target="_blank"><img
+                                    src="https://www.verse.com.tw/themes/verse//assets/images/common/footer-fb.svg"
+                                    alt="VERSE Facebook粉絲團"></a>
+                            <a data-t-cat="Navigation" data-t-act="Footer Navigation" data-t-label="VERSE Instagram官方帳號"
+                                href="https://www.instagram.com/verse.tw/" title="VERSE Instagram官方帳號"
+                                target="_blank"><img
+                                    src="https://www.verse.com.tw/themes/verse//assets/images/common/footer-ig.svg"
+                                    alt="VERSE Instagram官方帳號"></a>
+                        </div>
+                        <p class="footer__copy">Copyright © VERSE, all rights reserved.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
